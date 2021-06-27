@@ -5,18 +5,24 @@
   
 </head>
 <body>
-  <p><input type="text" id="inputForm">ここに名前を入力してください</p>
-  <button id="submitButton">送信する</button>
-  <p id="newMessage"></p>
+  
   <script type="text/javascript">
-  // var x = 5;
-  // alert(x);
-    document.getElementById("submitButton").onclick = function() {
-      var name = "";
-      name = document.getElementById("inputForm").value;
-      // alert(name);
-      document.getElementById("newMessage").innerHTML = name + "さん、以下が申し込み内容になります。";
-    }
+    // var myArray = new Array();
+    // myArray[0] = "pizza";
+    // myArray[1] = "chocolate";
+
+    // // alert(myArray[1]);
+    // alert(myArray.length);
+
+    // console.log(myArray);
+
+    var tweets = ["おはようございます","ランチタイムです","そろそろ仕事が終わります"];
+    // 
+    tweets.push = "仕事が完了しました。帰るぞ！";
+
+    tweets.splice(1,0,"本日のランチはパスタ！");
+
+    console.log(tweets);
   </script>
   
 </body>
