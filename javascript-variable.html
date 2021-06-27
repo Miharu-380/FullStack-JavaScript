@@ -5,29 +5,24 @@
   
 </head>
 <body>
-  <p>秘密の暗号を入れてください。</p>
-  <p><input type="text" id="magicWord"></p>
-  <p><button id="checkMagicWord">暗号をチェックする！</button></p>
+  <div id="tweetsDiv">
+
+  </div>
   
   <script type="text/javascript">
-    // var x = 2;
-
-    // if(x == 1){
-    //   alert("xは１です。");
-    // } else {
-    //   alert("xは１ではありません。" + x + "です。");
+   
+    // for(var i=5;i>0;i--) {
+    //   alert(i);
     // }
 
-    document.getElementById("checkMagicWord").onclick = function() {
-      var magicWordEntered = document.getElementById("magicWord").value;
-      var magicWord = "abracadabra";
-
-      if (magicWordEntered == magicWord) {
-        alert("OKです");
-      } else {
-        alert("正しい暗号を入れてください！");
-      }
+    var tweets = ["Morning", "Good Day!", "Dinner!", "Good night!"]
+    // 初期化："";
+    var tweetString = "";
+    for(var i = 0;i < tweets.length;i++) {
+      // alert(tweets[i]);
+      tweetString = tweetString + "<p>" + tweets[i] + "</p>"
     }
+    document.getElementById("tweetsDiv").innerHTML = tweetString;
   </script>
   
 </body>
