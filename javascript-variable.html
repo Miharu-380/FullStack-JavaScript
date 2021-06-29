@@ -2,31 +2,29 @@
 <html lang="ja">
 <head>
   <title>JavaScript</title>
-  
+
 </head>
 <body>
   <div id="tweetsDiv">
 
   </div>
-  
-  <script type="text/javascript">
-   
-    // for(var i=5;i>0;i--) {
-    //   alert(i);
-    // }
 
-    var tweets = ["Morning", "Good Day!", "Dinner!", "Good night!"]
-    // 初期化："";
-    var tweetString = "";
-    // for(var i = 0;i < tweets.length;i++) {
-      // alert(tweets[i]);
-    var i = 0;
-    while(i < tweets.length){
-      tweetString = tweetString + "<p>" + tweets[i] + "</p>"
-      i++;
+  <script type="text/javascript">
+    function average(a, b) {
+      return((a+b)/2);
     }
-    document.getElementById("tweetsDiv").innerHTML = tweetString;
+    var x = 5;
+    var y = 10;
+    alert(average(x,y));
+
+    var x = 8;
+    var y = 12;
+    alert(average(x,y));
+
+
+
+
   </script>
-  
+
 </body>
 </html>
